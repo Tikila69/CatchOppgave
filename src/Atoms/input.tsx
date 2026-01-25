@@ -1,9 +1,18 @@
-function Input(props: { placeholder: string; color?: string }) {
+function Input({
+    placeholder,
+    color,
+    value,
+}: {
+    placeholder: string;
+    color?: string;
+    value: string;
+}) {
     return (
         <input
             className="border rounded-md p-3 w-full"
-            style={{ color: props.color ? props.color : "black" }}
-            placeholder={props.placeholder}
+            style={{ color: color ? color : "black" }}
+            placeholder={placeholder}
+            value={value}
         />
     );
 }

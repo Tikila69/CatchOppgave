@@ -1,23 +1,23 @@
-export interface Department {
-    name: string;
-    isLeader: boolean;
-}
-
-export interface Firm {
+export interface Company {
     id: number;
     name: string;
-    department: Department[];
+    address?: string;
+}
+
+export interface Department {
+    id: number;
+    companyId: number;
+    name: string;
 }
 
 export interface User {
     id: number;
     name: string;
-    email: string;
-    firms: Firm[];
+    email?: string;
 }
 
-export interface Companies {
-    id: number;
-    name: string;
-    departments: string[];
+export interface DepartmentRole {
+    departmentId: number;
+    userId: number;
+    role?: string;
 }
