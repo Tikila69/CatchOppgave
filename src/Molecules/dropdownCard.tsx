@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import Lable from "../Atoms/lable";
+import Lable from "../Atoms/Lable";
 import { Department } from "../types";
 import { FaCrown, FaTrash, FaUserTie } from "react-icons/fa6";
 
@@ -40,10 +40,7 @@ function DropdownCard({
                                 onMouseLeave={() => setHoveredDept(null)}
                                 onClick={(e) => e.stopPropagation()}
                             >
-                                <Lable
-                                    text={dept.name}
-                                    isLeader={dept.role === "Leader"}
-                                />
+                                <Lable text={dept.name} isLeader={dept.role === "Leader"} />
                                 {hoveredDept === dept.id && (
                                     <div className="flex gap-1 ml-2">
                                         {dept.role === "Leader" ? (

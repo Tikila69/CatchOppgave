@@ -1,5 +1,5 @@
 import CompanyDropdown from "./CompanyDropdown";
-import Divider from "../Atoms/divider";
+import Divider from "../Atoms/Divider";
 import { Company, Department, DepartmentRole } from "../types";
 
 interface Props {

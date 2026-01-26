@@ -1,8 +1,8 @@
 import "./App.css";
-import Divider from "./Atoms/divider";
-import Lable from "./Atoms/lable";
+import Divider from "./Atoms/Divider";
+import Lable from "./Atoms/Lable";
 import Searchbar from "./Atoms/Searchbar";
-import DropdownCard from "./Molecules/dropdownCard";
+import DropdownCard from "./Molecules/DropdownCard";
 import DepartmentManagementPage from "./Pages/DepartmentManagementPage";
 import { useDepartmentData } from "./hooks/useDepartmentData";
 import UserProfile from "./Organisms/UserProfile";
