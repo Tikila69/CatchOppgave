@@ -3,9 +3,9 @@ import UserProfile from "../Organisms/UserProfile";
 import CompanyList from "../Organisms/CompanyList";
 import { useDepartmentData } from "../hooks/useDepartmentData";
 import { Company, Department, User, DepartmentRole } from "../types";
-import DropdownCard from "../Molecules/dropdownCard";
-import Lable from "../Atoms/lable";
-import Divider from "../Atoms/divider";
+import DropdownCard from "../Molecules/DropdownCard";
+import Lable from "../Atoms/Lable";
+import Divider from "../Atoms/Divider";
 import Searchbar from "../Atoms/Searchbar";
 
 function DepartmentManagementPage() {
@@ -54,6 +54,7 @@ function DepartmentManagementPage() {
                     department={[{ id: 0, companyId: 0, name: "DIGITAL", role: "Leader" }]}
                     color="white"
                 >
+                    <Divider color="#32363f" />
                     <Lable text="DESIGN" color="white" background={true} />
                     <Lable text="MARKEDSFØRING" color="white" background={true} />
                     <Divider color="#32363f" />

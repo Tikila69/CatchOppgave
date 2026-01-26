@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import DropdownCard from "../Molecules/dropdownCard";
+import DropdownCard from "../Molecules/DropdownCard";
 import Searchbar from "../Atoms/Searchbar";
-import Lable from "../Atoms/lable";
+import Lable from "../Atoms/Lable";
 import { Department } from "../types";
 
 interface Props {
@@ -28,7 +28,7 @@ function CompanyDropdown({
 
     useEffect(() => {
         const filtered = otherDepts.filter((d) =>
-            d.name.toLowerCase().includes(searchInput.toLowerCase())
+            d.name.toLowerCase().includes(searchInput.toLowerCase()),
         );
         setFilteredDepartments(filtered);
     }, [userDepartments, searchInput]);

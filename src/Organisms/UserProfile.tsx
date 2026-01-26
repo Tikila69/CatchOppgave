@@ -1,5 +1,5 @@
 import { CiUser } from "react-icons/ci";
-import Lable from "../Atoms/lable";
+import Lable from "../Atoms/Lable";
 import { User } from "../types";
 
 interface Props {
