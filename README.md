@@ -13,7 +13,7 @@ Jeg løste dette ved å legge inn en egen funksjon som gir tilgang for kall fra 
 
 På grunn av måten komponetene er satt sammen, og at flere av komponentene har behov for data fra eller å kunne sette mange av de samme statene, endte jeg opp med å samle disse statene inn i min egne hook. useDepartmentData er en hook som inneholder alle states for henting av data samt manipuleringen av dem.
 Her finner du funksjoner som "setUserAsLeader" som brukes for å sette setRole.
-Denne funksjone, sammen med "role" variabelen til staten eksporteres slik at man kan importere den inn på de sidene som trenger å manipulere bruker roller.
+Denne funksjone, sammen med "role" variabelen til staten eksporteres slik at man kan importere den til de komponentene som skulle trenge dem. I dette tilfelle passes de ned fra Page komponenten i form av "on" funksjoner.
 
 Det er også ganske tydelig at designet jeg har gått for i min egen løsning er litt anderledes fra det som ble sendt ut i oppgaven. Dette er fordi jeg ikke forstod hvordan data hirarkiet fungerte med det designet. Ettersom hele designet var en dropdown, betyr det at Catch Media AS skal eie all data som er i sin dropdown, men der kunne jeg finne data fra andre bedrifter. Jeg valgte derfor å splitte de opp i flere dropdowns slik at hvert firma fikk sin egen. På den måten er det tydeligere for sluttbruker hvem som eier dataen de driver å jobber med.
 
